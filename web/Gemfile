@@ -79,5 +79,8 @@ group :test do
   gem "webdrivers"
 end
 
-gem "shopify_app", "~> 21.4"
+gem "sentry-rails"
+gem "sentry-ruby"
+gem "sentry-sidekiq"
 gem "sidekiq"
+gem "shopify_app", "~> 21.4"

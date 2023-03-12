@@ -35,6 +35,9 @@ This template includes:
   | `RAILS_MASTER_KEY`         | Master Key                       |
   | `RAILS_ENV`                | production                       |
   | `RAILS_SERVE_STATIC_FILES` | 1                                |
+  | `SENTRY_CURRENT_ENV`       | production                       |
+  | `SENTRY_DSN`               | Your Sentry DSN                  |
+  | `SENTRY_TRACES_SAMPLE_RATE`| 1.0                              |
   | `SHOPIFY_API_KEY`          | Shopify API Key                  |
   | `SHOPIFY_API_SCOPES`       | Shopify API Scopes               |
   | `SHOPIFY_API_SECRET`       | Shopify API Secret               |
