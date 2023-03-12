@@ -76,5 +76,5 @@ group :test do
   gem "webdrivers"
 end
 
-gem "sidekiq"
 gem "shopify_app", "~> 21.4"
+gem "sidekiq"
