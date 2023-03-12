@@ -36,83 +36,82 @@ class ProductCreator < ApplicationService
   end
 
   private
+    def random_title
+      adjective = ADJECTIVES[rand(ADJECTIVES.size)]
+      noun = NOUNS[rand(NOUNS.size)]
 
-  def random_title
-    adjective = ADJECTIVES[rand(ADJECTIVES.size)]
-    noun = NOUNS[rand(NOUNS.size)]
+      "#{adjective} #{noun}"
+    end
 
-    "#{adjective} #{noun}"
-  end
+    def random_price
+      (100.0 + rand(1000)) / 100
+    end
 
-  def random_price
-    (100.0 + rand(1000)) / 100
-  end
+    ADJECTIVES = [
+      "autumn",
+      "hidden",
+      "bitter",
+      "misty",
+      "silent",
+      "empty",
+      "dry",
+      "dark",
+      "summer",
+      "icy",
+      "delicate",
+      "quiet",
+      "white",
+      "cool",
+      "spring",
+      "winter",
+      "patient",
+      "twilight",
+      "dawn",
+      "crimson",
+      "wispy",
+      "weathered",
+      "blue",
+      "billowing",
+      "broken",
+      "cold",
+      "damp",
+      "falling",
+      "frosty",
+      "green",
+      "long",
+    ]
 
-  ADJECTIVES = [
-    "autumn",
-    "hidden",
-    "bitter",
-    "misty",
-    "silent",
-    "empty",
-    "dry",
-    "dark",
-    "summer",
-    "icy",
-    "delicate",
-    "quiet",
-    "white",
-    "cool",
-    "spring",
-    "winter",
-    "patient",
-    "twilight",
-    "dawn",
-    "crimson",
-    "wispy",
-    "weathered",
-    "blue",
-    "billowing",
-    "broken",
-    "cold",
-    "damp",
-    "falling",
-    "frosty",
-    "green",
-    "long",
-  ]
-
-  NOUNS = [
-    "waterfall",
-    "river",
-    "breeze",
-    "moon",
-    "rain",
-    "wind",
-    "sea",
-    "morning",
-    "snow",
-    "lake",
-    "sunset",
-    "pine",
-    "shadow",
-    "leaf",
-    "dawn",
-    "glitter",
-    "forest",
-    "hill",
-    "cloud",
-    "meadow",
-    "sun",
-    "glade",
-    "bird",
-    "brook",
-    "butterfly",
-    "bush",
-    "dew",
-    "dust",
-    "field",
-    "fire",
-    "flower",
-  ]
+    NOUNS = [
+      "waterfall",
+      "river",
+      "breeze",
+      "moon",
+      "rain",
+      "wind",
+      "sea",
+      "morning",
+      "snow",
+      "lake",
+      "sunset",
+      "pine",
+      "shadow",
+      "leaf",
+      "dawn",
+      "glitter",
+      "forest",
+      "hill",
+      "cloud",
+      "meadow",
+      "sun",
+      "glade",
+      "bird",
+      "brook",
+      "butterfly",
+      "bush",
+      "dew",
+      "dust",
+      "field",
+      "fire",
+      "flower",
+    ]
 end
